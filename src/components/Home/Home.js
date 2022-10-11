@@ -20,7 +20,7 @@ const Home = () => {
           </p>
           <div className="flex flex-wrap justify-center">
             <Link
-              to="/quiz"
+              to="/"
               className="btn btn-info hover:text-white px-8 py-3 m-2 text-lg font-semibold rounded bg-violet-400 text-gray-900 focus:outline-none focus:ring focus:ring-violet-300"
             >
               Get started

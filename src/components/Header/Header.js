@@ -52,22 +52,6 @@ const Header = () => {
               </li>
               <li>
                 <NavLink
-                  to="/quiz"
-                  aria-label="Our product"
-                  title="Our product"
-                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 
-                  
-                }"
-                >
-                  {({ isActive }) => (
-                    <span className={isActive ? activeClassName : undefined}>
-                      Quiz
-                    </span>
-                  )}
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
                   to="/chart"
                   aria-label="Product pricing"
                   title="Product pricing"
