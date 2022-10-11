@@ -1,9 +1,7 @@
 import { Eye } from "react-hero-icon/solid";
 import { toast } from "react-toastify";
+import Option from "../Options/Option";
 
-const compare = (str1, str2) => {
-  return str1 === str2;
-};
 const html = (text) => {
   return { __html: text };
 };
@@ -33,26 +31,13 @@ const QuizSection = ({ option, serial }) => {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-6  mt-4 ml-8">
-          {options.map((item, index) => {
-            return (
-              <div key={index} className="flex items-center gap-4">
-                <input
-                  onChange={() => {
-                    const matched = compare(item, correctAnswer);
-                    if (matched) {
-                      toast.success("correct Answer", { autoClose: 500 });
-                    } else {
-                      toast.warning("incorrect Answer", { autoClose: 500 });
-                    }
-                  }}
-                  type="radio"
-                  name="radio-4"
-                  className="radio radio-accent"
-                />
-                <label>{item}</label>
-              </div>
-            );
-          })}
+          {options.map((item, index) => (
+            <Option
+              key={index}
+              item={item}
+              correctAnswer={correctAnswer}
+            ></Option>
+          ))}
         </div>
       </div>
     </div>
