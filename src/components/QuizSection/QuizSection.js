@@ -16,10 +16,10 @@ const QuizSection = ({ option, serial }) => {
       <div className=" grid place-items-center mt-4 border p-4 shadow-md">
         <div className="flex ">
           <div>
-            <h1>
+            <p>
               Quiz : {serial}
               <span dangerouslySetInnerHTML={html(question)}></span>
-            </h1>
+            </p>
           </div>
           <div className="ml-12">
             <button
@@ -33,9 +33,9 @@ const QuizSection = ({ option, serial }) => {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-6  mt-4 ml-8">
-          {options.map((op) => {
+          {options.map((op, index) => {
             return (
-              <div key={op} className="flex items-center gap-4">
+              <div key={index} className="flex items-center gap-4">
                 <input
                   onChange={() => {
                     const matched = compare(op, correctAnswer);

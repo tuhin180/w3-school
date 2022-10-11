@@ -4,7 +4,6 @@ import QuizSection from "../QuizSection/QuizSection";
 const Quiz = () => {
   const programs = useLoaderData();
   const { name, questions } = programs;
-  console.log(programs);
 
   return (
     <div className="mt-10 bg-red-100">
