@@ -33,10 +33,9 @@ const QuizSection = ({ option, serial }) => {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-6  mt-4 ml-8">
-          {options.map((op, index) => {
+          {options.map((op) => {
             return (
               <div key={op} className="flex items-center gap-4">
-                <span>{index + 1}</span>
                 <input
                   onChange={() => {
                     const matched = compare(op, correctAnswer);
