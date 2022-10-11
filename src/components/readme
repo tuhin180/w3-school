@@ -1,0 +1,8 @@
+hello everyone
+TO create this project i have use react router dom for better design i use tailwind css and daisiUi.
+.at first i create this project with npx create-react-app w3-school
+.then installed all the other necessary libray
+.at first i create a layouts folder where main routes are created
+.create comoponent folder inside component folder create header component, home,quiz, footer ,error page ,chart,blog
+.to route these component i create a utitlities folder where i create routes.js .in this folder all the orutes will be here.
+.afted that i crete a loader folder so that i can load data and my code looks clean.

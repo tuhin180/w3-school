@@ -1,9 +1,14 @@
-import React from "react";
+import { stringify } from "postcss";
+import { useLoaderData } from "react-router-dom";
 
 const Quiz = () => {
+  const programs = useLoaderData();
+  const { name } = programs;
+  console.log(name);
+
   return (
     <div>
-      <h1>i am quiz</h1>
+      <h1 className="text-center">Quiz of {name}</h1>
     </div>
   );
 };

@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { quizContext } from "../../Layouts/Main";
+import Subject from "../Subjects/subject";
 
 const Home = () => {
+  const quizSubjects = useContext(quizContext);
+
   return (
     <div className="mt-2">
       <section className="bg-stone-200 text-black">
         <div className="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:max-w-3xl">
           <h1 className="text-4xl font-bold leading-none sm:text-5xl">
-            Quisquam necessita vel
-            <span className="text-violet-400">laborum doloribus</span>delectus
+            Learn WebDevelopment
+            <span className="text-violet-400"> Practicing libray</span>quiz
           </h1>
           <p className="px-8 mt-8 mb-12 text-lg">
-            Cupiditate minima voluptate temporibus quia? Architecto beatae esse
-            ab amet vero eaque explicabo!
+            Development is all about paracticing .so we arrange some quiz for
+            practicing them you can learn something new.
           </p>
           <div className="flex flex-wrap justify-center">
             <Link
@@ -27,6 +31,12 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <div className="place-items-center mt-10 m-4 grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 ">
+        {quizSubjects.map((subject) => (
+          <Subject key={subject.id} subject={subject}></Subject>
+        ))}
+      </div>
     </div>
   );
 };
