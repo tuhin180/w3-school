@@ -6,7 +6,6 @@ const subject = ({ subject }) => {
   const { id, name, logo } = subject;
   return (
     <div className="">
-      this is the card section
       <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
         <img
           src={logo}

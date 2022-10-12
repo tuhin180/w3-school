@@ -13,8 +13,8 @@ const QuizSection = ({ option, serial }) => {
           {/* quetions  */}
 
           <div className="flex ">
-            <p>Quiz :{serial}</p>
             <PaperAirplaneIcon className=" w-6 h-6 " />
+            <p className="position-fixed">Quiz{serial}:</p>
             <div>
               <h1 dangerouslySetInnerHTML={{ __html: question }} />
             </div>
