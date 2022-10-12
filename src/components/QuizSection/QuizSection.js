@@ -8,21 +8,21 @@ const QuizSection = ({ option, serial }) => {
 
   return (
     <div className=" bg-red-100">
-      <div className="w-full grid md:place-items-center mt-4 border p-2 md:p-4 shadow-md w-7/12 m-auto">
-        <div className="flex w-full">
+      <div className="w-full  md:place-items-center mt-4  border p-2 md:p-4 shadow-md md:w-7/12 m-auto">
+        <div className="flex gap-2  justify-between">
           {/* quetions  */}
-          <div>
-            <div className=" text-left flex flex-row ">
-              <h1> Quiz : {serial}</h1>
-              <PaperAirplaneIcon className="w-6 h-6" />
-              <div>
-                <h1 dangerouslySetInnerHTML={{ __html: question }} />
-              </div>
+
+          <div className="flex ">
+            <p>Quiz :{serial}</p>
+            <PaperAirplaneIcon className=" w-6 h-6 " />
+            <div>
+              <h1 dangerouslySetInnerHTML={{ __html: question }} />
             </div>
           </div>
 
           {/* eye button  */}
-          <div className="ml-8">
+
+          <div className="">
             <button
               onClick={() => {
                 toast.success(correctAnswer, { autoClose: 200 });
