@@ -8,8 +8,30 @@ TO create this project i have use react router dom for better design i use tailw
 .afted that i crete a loader folder so that i can load data iside the loadData.js file.
 .to load data i create context so that i can access the data to all over the component i have.
 .so i create context on main.js file and inside this file i have header component and Outlet and footer.this outlet will show my all component inside header and footer.first-letterfirst-line
-.after that i call my loader function inside Main component object .in loader function i callde my fuction loadData.js
+.after that i call my loader function inside Main component object .in loader function i called my fuction loadData.js
 .after that i get this data on main.js .
 .in main.js pass the data to inside context value.
 .after that i can say i can the data from any where in the contex.
 .then i get the data inside home component.
+.destructure the data and use it to make card
+.i use map function to create multiple card
+.then in a card button section pass the id so that specific card id can pass
+.then i use params to get the id and fetch the data inside the quiz component .
+.then get the data on quiz section
+.after that i found tricky data section
+.so i have done that section step by step
+.fisrt destructure the data and use name
+.to get question i have create a map on question
+.in quiz section i get option ,correctAnswer and quiz options
+.then i use thes data
+.i found out that there is another array and there is option
+.then agai i create a map on this option and use the data
+. after that i have found that i have to create a chart using total data of specific section .the cart have to show the diagram that will show the specific section quiz number
+. then i create anoter component that is chart component
+.here i get benefit of using context
+.i get data to using context function
+.then map on the data and create chart
+.at the final part is create blog site
+.in blog site there is nothing but ui design
+
+thats is thank for reading the file..
