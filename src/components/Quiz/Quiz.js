@@ -6,15 +6,24 @@ const Quiz = () => {
   const { name, questions } = programs;
 
   return (
-    <div className="mt-10 ">
-      <h1 className="text-center">Quiz of {name}</h1>
+    <div className="mt-10  ">
+      <h1 className="text-center text-3xl">
+        Quiz of <span className="text-red-400">{name}</span>
+      </h1>
 
       {/* quiz section  */}
-      {questions.map((question, index) => {
-        return (
-          <QuizSection key={question.id} option={question} serial={index + 1} />
-        );
-      })}
+
+      <div>
+        {questions.map((question, index) => {
+          return (
+            <QuizSection
+              key={question.id}
+              option={question}
+              serial={index + 1}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

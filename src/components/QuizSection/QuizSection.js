@@ -7,12 +7,12 @@ const QuizSection = ({ option, serial }) => {
   const { question, correctAnswer, options } = option;
 
   return (
-    <div className="flex">
-      <div className=" grid place-items-center mt-4 border p-4 shadow-md w-7/12 m-auto bg-yellow-200">
-        <div className="flex">
+    <div className=" bg-red-100">
+      <div className="w-full grid md:place-items-center mt-4 border p-2 md:p-4 shadow-md w-7/12 m-auto">
+        <div className="flex w-full">
           {/* quetions  */}
           <div>
-            <div className=" text-left flex flex-row">
+            <div className=" text-left flex flex-row ">
               <h1> Quiz : {serial}</h1>
               <PaperAirplaneIcon className="w-6 h-6" />
               <div>
@@ -35,7 +35,7 @@ const QuizSection = ({ option, serial }) => {
         </div>
 
         {/* options  */}
-        <div className="grid grid-cols-2 gap-6  mt-4 ml-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-2 gap-6  mt-4 ml-8">
           {options.map((item, index) => (
             <Option
               key={index}

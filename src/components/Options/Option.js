@@ -7,7 +7,7 @@ const compare = (str1, str2) => {
 const Option = ({ item, correctAnswer }) => {
   return (
     <div>
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 border-2 rounded-md border-fuchsia-300 e p-6">
         <input
           onChange={() => {
             const matched = compare(item, correctAnswer);
