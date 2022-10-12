@@ -23,7 +23,7 @@ const subject = ({ subject }) => {
           <Link
             to={`/quiz/${id}`}
             type="button"
-            className="flex gap-2 items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900"
+            className="flex gap-2 items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900 focus:outline-none focus:ring focus:ring-violet-300"
           >
             Start Practice
             <ArrowRight className="mt-1"></ArrowRight>
