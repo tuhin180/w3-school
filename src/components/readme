@@ -5,4 +5,11 @@ TO create this project i have use react router dom for better design i use tailw
 .at first i create a layouts folder where main routes are created
 .create comoponent folder inside component folder create header component, home,quiz, footer ,error page ,chart,blog
 .to route these component i create a utitlities folder where i create routes.js .in this folder all the orutes will be here.
-.afted that i crete a loader folder so that i can load data and my code looks clean.
+.afted that i crete a loader folder so that i can load data iside the loadData.js file.
+.to load data i create context so that i can access the data to all over the component i have.
+.so i create context on main.js file and inside this file i have header component and Outlet and footer.this outlet will show my all component inside header and footer.first-letterfirst-line
+.after that i call my loader function inside Main component object .in loader function i callde my fuction loadData.js
+.after that i get this data on main.js .
+.in main.js pass the data to inside context value.
+.after that i can say i can the data from any where in the contex.
+.then i get the data inside home component.
