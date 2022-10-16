@@ -5,6 +5,7 @@ const compare = (str1, str2) => {
   return str1 === str2;
 };
 const Option = ({ item, correctAnswer }) => {
+  console.log(item);
   return (
     <div>
       <div className="flex md:items-center gap-4 border-2 rounded-md border-fuchsia-300 e p-6">
